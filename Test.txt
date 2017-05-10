@@ -53,3 +53,17 @@
 #DD#LAD#H		
 #LDV$111#DD#LAD#H		
 #LDV$-11#DD#LAD#H		
+#AV$111#H		
+#LAV$-111#AV$11#H		
+#AV$-111#H		
+#AV$111#H		
+#AV$-11#H		
+#AV$1#LBV$111#AB#H		
+#AV$-1111#LBV$11#AB#H	
+#LCV$111#AC#H		
+#LCV$-11#AC#H		
+#AC#H		
+#LAV$1#LCV$1#AC#H		
+#LDV$111#AD#H		
+#AD#H		
+#LDV$-11#AD#H			
