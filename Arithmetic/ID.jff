@@ -31,17 +31,15 @@
 		</block>
 		<block id="5" name="q5">
 			<tag>Machine5</tag>
-			<x>773.0</x>
-			<y>582.0</y>
+			<x>684.0</x>
+			<y>562.0</y>
+		</block>
+		<block id="6" name="q6">
+			<tag>Machine6</tag>
+			<x>830.0</x>
+			<y>555.0</y>
 		</block>
 		<!--The list of transitions.-->
-		<transition>
-			<from>1</from>
-			<to>2</to>
-			<read>1</read>
-			<write>~</write>
-			<move>R</move>
-		</transition>
 		<transition>
 			<from>2</from>
 			<to>3</to>
@@ -51,9 +49,37 @@
 		</transition>
 		<transition>
 			<from>5</from>
-			<to>3</to>
+			<to>6</to>
 			<read>1</read>
 			<write/>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>3</to>
+			<read>1</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>3</to>
+			<read>-</read>
+			<write/>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>3</to>
+			<read/>
+			<write>1</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>1</read>
+			<write>~</write>
 			<move>R</move>
 		</transition>
 		<transition>
@@ -65,17 +91,17 @@
 		</transition>
 		<transition>
 			<from>0</from>
+			<to>1</to>
+			<read>b</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>0</from>
 			<to>0</to>
 			<read>!b</read>
 			<write>~</write>
 			<move>L</move>
-		</transition>
-		<transition>
-			<from>1</from>
-			<to>4</to>
-			<read>-</read>
-			<write>~</write>
-			<move>R</move>
 		</transition>
 		<transition>
 			<from>2</from>
@@ -92,17 +118,10 @@
 			<move>R</move>
 		</transition>
 		<transition>
-			<from>0</from>
-			<to>1</to>
-			<read>b</read>
-			<write>~</write>
-			<move>R</move>
-		</transition>
-		<transition>
 			<from>1</from>
-			<to>3</to>
-			<read/>
-			<write>1</write>
+			<to>4</to>
+			<read>-</read>
+			<write>~</write>
 			<move>R</move>
 		</transition>
 		<!--The list of automata-->
@@ -111,6 +130,7 @@
 		<Machine1/>
 		<Machine4/>
 		<Machine3/>
+		<Machine6/>
 		<Machine5/>
 	</automaton>
 </structure>
