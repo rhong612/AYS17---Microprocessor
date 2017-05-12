@@ -41,48 +41,6 @@
 		</block>
 		<!--The list of transitions.-->
 		<transition>
-			<from>2</from>
-			<to>3</to>
-			<read/>
-			<write>1</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>5</from>
-			<to>6</to>
-			<read>1</read>
-			<write/>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>6</from>
-			<to>3</to>
-			<read>1</read>
-			<write>~</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>6</from>
-			<to>3</to>
-			<read>-</read>
-			<write/>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>1</from>
-			<to>3</to>
-			<read/>
-			<write>1</write>
-			<move>R</move>
-		</transition>
-		<transition>
-			<from>1</from>
-			<to>2</to>
-			<read>1</read>
-			<write>~</write>
-			<move>R</move>
-		</transition>
-		<transition>
 			<from>4</from>
 			<to>5</to>
 			<read/>
@@ -90,10 +48,10 @@
 			<move>L</move>
 		</transition>
 		<transition>
-			<from>0</from>
-			<to>1</to>
-			<read>b</read>
-			<write>~</write>
+			<from>2</from>
+			<to>3</to>
+			<read/>
+			<write>1</write>
 			<move>R</move>
 		</transition>
 		<transition>
@@ -104,6 +62,34 @@
 			<move>L</move>
 		</transition>
 		<transition>
+			<from>1</from>
+			<to>3</to>
+			<read/>
+			<write>1</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>4</to>
+			<read>-</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>3</to>
+			<read>1</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>3</to>
+			<read>-</read>
+			<write/>
+			<move>R</move>
+		</transition>
+		<transition>
 			<from>2</from>
 			<to>2</to>
 			<read>1</read>
@@ -118,9 +104,23 @@
 			<move>R</move>
 		</transition>
 		<transition>
+			<from>5</from>
+			<to>6</to>
+			<read>1</read>
+			<write/>
+			<move>L</move>
+		</transition>
+		<transition>
 			<from>1</from>
-			<to>4</to>
-			<read>-</read>
+			<to>2</to>
+			<read>1</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>b</read>
 			<write>~</write>
 			<move>R</move>
 		</transition>
